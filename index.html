@@ -175,6 +175,106 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  /* ======== 🔹 MEDIA QUERIES PARA RESPONSIVE ======== */
+
+/* ✅ Para tablets (pantallas medianas: hasta 992px) */
+@media (max-width: 992px) {
+  #imagen1 {
+    width: 90%;
+    margin: 1rem auto;
+    height: auto;
+  }
+
+  .dentro, .contenedorman {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    margin-left: 0;
+  }
+
+  .e1, .e2, .e3, .e4, .e5 {
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 2rem; }
+  p, #dis { font-size: 1.2rem; }
+
+  .imgmante, .imga, .imga2 {
+    width: 90%;
+    height: auto;
+  }
+
+  .cont-btn, .cont-btn2 {
+    margin: 1rem auto;
+    display: block;
+  }
+}
+
+/* ✅ Para celulares grandes (hasta 768px) */
+@media (max-width: 768px) {
+  .navbar-brand, .nav-link {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 90% !important;
+    margin: 1rem auto;
+  }
+
+  #imagen1 {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  .carousel-inner img {
+    max-height: 400px;
+  }
+
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.8rem; }
+  p, #dis { font-size: 1rem; }
+
+  .cont-btn, .cont-btn2 {
+    width: 180px;
+    height: 55px;
+    font-size: 1rem;
+  }
+}
+
+/* ✅ Para celulares pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .img-logo img {
+    height: 45px;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
+  p, #dis { font-size: 0.9rem; }
+
+  .imga, .imga2, .imgmante {
+    width: 100%;
+    height: 180px;
+  }
+
+  .cont-btn, .cont-btn2 {
+    width: 160px;
+    height: 50px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -197,7 +297,7 @@
           <a class="nav-link" href="#">Eventos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pedidos</a>
+          <a class="nav-link" href="#" onclick="hacerp()">Pedidos</a>
         </li>
       </ul>
     </div>
@@ -348,5 +448,10 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+      function hacerp(){
+        window.location.href = "formulario.html";
+      }
+</script>
 </body>
 </html>
