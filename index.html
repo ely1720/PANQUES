@@ -129,7 +129,20 @@
   }
   p{ text-align: center; font-size: 1.5rem;}
   #dis{font-size: 2rem; color: white;}
-  .cont-btn {
+  .cont-btn2 {
+    background:#b03019;
+    color:white; border:none;
+    padding:12px 25px; border-radius:25px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:transform .3s ease, box-shadow .3s ease;
+    width: 230px; margin-left: 205px; margin-top: 10px;  height: 75px;
+  }
+  .cont-btn:hover, .cont-btn2:hover {
+    transform:translateY(-2px);
+    box-shadow:0 8px 25px rgba(255, 255, 255, 0.3);
+  }
+  .cont-btn{
     background:#b03019;
     color:white; border:none;
     padding:12px 25px; border-radius:25px;
@@ -138,11 +151,30 @@
     transition:transform .3s ease, box-shadow .3s ease;
     width: 230px; margin-left: 85px; margin-top: 10px;  height: 75px;
   }
-  .cont-btn:hover {
-    transform:translateY(-2px);
-    box-shadow:0 8px 25px rgba(255, 255, 255, 0.3);
-  }
   #btn{font-size: 1.5rem;}
+  .contenedorman{ display: flex;}
+  .e4{
+    margin-top: 15rem;
+    width: 40rem;
+    height: 30rem ;
+    margin-left: 5rem;
+  }
+  .e5{
+    margin-top: 10rem;
+    width: 40rem;
+    height: 30rem ;
+    margin-left: 5rem;
+  }
+  .imgmante {
+    width: 680px;
+    height: 470px;
+    margin-left: 0.6rem;
+    margin-top: 1rem;
+    background-image: url("mantecadas.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 </style>
 </head>
 <body>
@@ -189,7 +221,7 @@
   <!--Carrusel-->
   <div id="carouselExampleFade" class="carousel slide carousel-fade">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active"> 
         <img src="panques.jpg" class="d-block w-100" alt="..." style="height: 35rem; width: 35xrem;">
       </div>
       <div class="carousel-item"> 
@@ -291,9 +323,23 @@
       <button class="cont-btn"><strong id="btn">Hacer pedido</strong></button>
     </div>
     <div class="e3">
-      <div class="imga2"></div>
       <div class="escrito"><h3>Paque de</h3>
       <h2>COCO</h2></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="cont3">
+  <div class="contenedorman">
+    <div class="e4">  
+      <h1>MANTECADAS</h1>
+      <p id="dis">Disfruta de cada uno</p>
+      <p id="dis">de los sabores.</p>
+      <button class="cont-btn2"><strong id="btn">Hacer pedido</strong></button>
+    </div>
+    <div class="e5">  
+      <div class="imgmante"></div>
     </div>
   </div>
 </div>
